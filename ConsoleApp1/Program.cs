@@ -12,11 +12,11 @@ using System.Linq;
 
 namespace ConsoleApp1
 {
-    /* https://api.openweathermap.org/data/2.5/weather?q=Chelyabinsk&appid=e39da26848afddad06dbe05633444446&units=metric */
+    /* */
     class Program
     {
-        private static readonly string tlgToken = "1769600689:AAHnIi0qTQYSaPxY5Z-jaol10FwSZ_aMZ70";
-        private static readonly string WeatherToken = "e39da26848afddad06dbe05633444446";
+        private static readonly string tlgToken = "";           // Use personal token
+        private static readonly string WeatherToken = "";       //https://openweathermap.org 
         private static readonly string BaseTlgUrl = "https://api.telegram.org/bot";
         private static readonly string BaseWeatherUlr = "https://api.openweathermap.org/data/2.5/weather?q=";
         private static readonly HttpClient client = new HttpClient();
@@ -25,7 +25,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             ProcessGet();
-            Console.WriteLine("asdasdas");
         }
         private static void ProcessGet()
         {
